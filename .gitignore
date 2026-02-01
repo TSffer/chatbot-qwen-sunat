@@ -23,5 +23,3 @@ Thumbs.db
 # Project specific
 *.wav
 !src/app/referencia_peru.wav
-# Ignore generated wavs but keep reference if needed, usually we keep reference.
-# The user has data/dataset_finetuning.jsonl. If it's not huge we keep it.
