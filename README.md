@@ -77,5 +77,9 @@ Una vez iniciada la API en Colab, puedes interactuar con ella:
   ```
    ![Prueba1](test1.png)
 - **Chat Voz**: `POST {URL_NGROK}/v1/chat/audio`
-   ![Prueba2](test2.png)
+   <p align="center">
+  <audio controls>
+    <source src="resp_7c862091-4297-4415-9c73-925288083f5d.wav" type="audio/mpeg">
+  </audio>
+</p>
 ---
