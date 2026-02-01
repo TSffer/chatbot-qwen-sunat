@@ -45,15 +45,13 @@ Este notebook levanta una API FastAPI y expone el servicio mediante **ngrok**.
 3. **Mount Drive**: Ejecuta la celda para montar Google Drive. Esto es CRÍTICO porque el script busca el modelo entrenado en tu Drive:
    - Ruta esperada: `/content/drive/My Drive/Modelos_Qwen/Sunat_LoRA_v1`
 4. **Carga de Archivos**:
-   Debes subir la carpeta `src` completa o recrear la estructura de carpetas en Colab para que el script funcione correctamente.
+   Debes subir la carpeta `api_qa_sunat.py` y `referencia_peru.wav` completa o recrear la estructura de carpetas en Colab para que el script funcione correctamente.
    
    Estructura requerida en Colab:
    ```
    /content/
-   ├── referencia_peru.wav  <-- Sube este archivo directamente a la raíz
-   └── src/
-       └── app/
-           └── api_qa_sunat.py <-- Sube este archivo
+   ├── referencia_peru.wav 
+   └── api_qa_sunat.py
    ```
    
    > **Nota Importante**: Si el notebook intenta ejecutar `python src/app/servidor_sunat.py`, asegúrate de cambiarlo a `python src/app/api_qa_sunat.py` o renombra tu archivo Python a `servidor_sunat.py`.
