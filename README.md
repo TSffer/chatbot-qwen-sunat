@@ -2,7 +2,7 @@
 
 Este proyecto implementa un chatbot inteligente especializado en consultas de la SUNAT, utilizando el modelo **Qwen3-8B** optimizado con **Unsloth** para un fine-tuning eficiente (LoRA) y capacidades de clonación de voz (TTS).
 
-El proyecto está diseñado para ejecutarse principalmente en **Google Colab**, aprovechando su GPU gratuita.
+El proyecto debe ejecutarse en **Google Colab**, aprovechando su GPU gratuita.
 
 ## 📂 Estructura del Proyecto
 
