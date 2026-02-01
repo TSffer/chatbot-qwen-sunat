@@ -72,7 +72,7 @@ Una vez iniciada la API en Colab, puedes interactuar con ella:
 - **Chat Texto**: `POST {URL_NGROK}/v1/chat`
   ```json
   {
-    "pregunta": "¿Cómo tramitar mi RUC?",
+    "pregunta": "¿Qué es el Impuesto al Valor Agregado (IVA)?",
     "temperatura": 0.3,
     "max_tokens": 512
   }
