@@ -45,7 +45,7 @@ Este notebook levanta una API FastAPI y expone el servicio mediante **ngrok**.
 3. **Mount Drive**: Ejecuta la celda para montar Google Drive. Esto es CRÍTICO porque el script busca el modelo entrenado en tu Drive:
    - Ruta esperada: `/content/drive/My Drive/Modelos_Qwen/Sunat_LoRA_v1`
 4. **Carga de Archivos**:
-   Debes subir la carpeta `api_qa_sunat.py` y `referencia_peru.wav` completa o recrear la estructura de carpetas en Colab para que el script funcione correctamente.
+   Debes subir los archivos `api_qa_sunat.py` y `referencia_peru.wav` en Colab para que el script funcione correctamente.
    
    Estructura requerida en Colab:
    ```
@@ -54,7 +54,7 @@ Este notebook levanta una API FastAPI y expone el servicio mediante **ngrok**.
    └── api_qa_sunat.py
    ```
    
-   > **Nota Importante**: Si el notebook intenta ejecutar `python src/app/servidor_sunat.py`, asegúrate de cambiarlo a `python src/app/api_qa_sunat.py` o renombra tu archivo Python a `servidor_sunat.py`.
+   > **Nota Importante**: Si ya dispone del archivo comprimido Sunat_LoRA_v1.zip, puede cargarlo directamente para su uso; no es necesario entrenar nuevamente el modelo.
 
 5. **Clonación de Voz (TTS)**:
    El archivo `api_qa_sunat.py` espera encontrar un audio de referencia en `/content/referencia_peru.wav`. Asegúrate de subirlo a la raíz de Colab.
@@ -75,6 +75,7 @@ Una vez iniciada la API en Colab, puedes interactuar con ella:
     "max_tokens": 512
   }
   ```
+   ![Prueba1](test1.png)
 - **Chat Voz**: `POST {URL_NGROK}/v1/chat/audio`
-
+   ![Prueba2](test2.png)
 ---
